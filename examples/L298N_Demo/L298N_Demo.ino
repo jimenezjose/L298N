@@ -26,6 +26,8 @@ void setup() {
 
 void loop() {
 
+  /**************** MOTOR ONE ****************/
+
   digitalWrite( LED_PIN, HIGH );
 
   for( int velocity = 0; velocity < 400; velocity++ ) {
@@ -37,13 +39,14 @@ void loop() {
   for( int velocity = 400; velocity >= 0; velocity-- ) {
     /* motor 1 moving forward in decresing speed */
     motor.setM1Velocity( velocity );
+    delay( 2 );
   }
 
   digitalWrite( LED_PIN, LOW );
 
-  for( int velocity = 0; speed > -400; speed++ ) {
+  for( int velocity = 0; velocity > -400; velocity-- ) {
     /* motor 1 moving in reverse NOTE NEGATIVE */
-    motor.setM1Velocity( - speed );
+    motor.setM1Velocity( velocity );
     delay( 2 );
   }
 
@@ -53,5 +56,34 @@ void loop() {
     delay( 2 )
   }
 
+  /**************** MOTOR TWO ****************/
+
+  digitalWrite( LED_PIN, HIGH );
+
+  for( int velocity = 0; velocity < 400; velocity++ ) {
+    /* forward speed for motor two */
+    motor.setM2Velocity( velocity );
+    delay( 2 );
+  }
+
+  for( int velocity = 400; velocity >= 0; velocity-- ) {
+    /* slowing down forward speed for motor 2 */
+    motor.setM2Velocity( velocity );
+    delay( 2 );
+  }
+
+  digitalWrite( LED_PIN, LOW );
+
+  for( int velocity = 0; velocity > -400; velocity-- ) {
+    /* motor 2 in reverse */
+    motor.setM2Velocity( velocity );
+    delay( 2 );
+  }
+
+  for( int velocity = -400; velocity <= 0; velocity++ ) {
+    /* reversing speed slowing down */
+    motor.setM2Velocity( velocity );
+    delay( 2 );
+  }
 
 }
