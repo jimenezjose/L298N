@@ -1,2 +1,2 @@
 # L298N
-L298N simple library
+Drive 2 DC motors using the L298N H-Bridge module
