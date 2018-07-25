@@ -10,7 +10,7 @@ Sources of Help: https://github.com/pololu/drv8835-motor-shield
 #include "L298N.h"
 
 /***************************************************************************
-% Routine Name : L298N
+% Constructor :  L298N
 % File :         L298N.cpp
 % Parameters:    arduino pin values for L298N male pin labled:
 %                IN1, In2, IN3, IN4, ENA, ENB, respectively.
