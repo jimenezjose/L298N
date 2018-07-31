@@ -3,7 +3,7 @@
 /*
  * This exapmle uses the L298N library to drive two DC motors forwards then 
  * backwards, one motor at a time. PWM pins are needed for ENA and ENB to 
- * control the speed of of the motors.
+ * control the speed of the motors.
  * An led will be used to signify a change in direction of the motors.
  *
  * NOTE: if a motor goes in reverse instead of forward, switch the dc motor pins
