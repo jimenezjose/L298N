@@ -79,7 +79,7 @@ void L298N :: setM1Velocity( int velocity ) {
 % File :         L298N.cpp
 % Parameters:    velocity - analog speed and direction
 % Description :  velocity > 0 -- motor rotates forwrd
-%                velocity < 0 -- motor ratates in reverse
+%                velocity < 0 -- motor rotates in reverse
 %                velocity = 0 -- motor is at rest
 %                max velocity value -- (400)
 %                min velocity value -- (-400)
