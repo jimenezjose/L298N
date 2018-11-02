@@ -13,7 +13,7 @@ Sources of Help: https://github.com/pololu/drv8835-motor-shield
 % Constructor :  L298N
 % File :         L298N.cpp
 % Parameters:    arduino pin values for L298N male pin labled:
-%                IN1, In2, IN3, IN4, ENA, ENB, respectively.
+%                IN1, IN2, IN3, IN4, ENA, ENB, respectively.
 % Description :  L298N contructor - initializes arduino pin values.
 %                Default motor speed is set to 0.
 % IMPORTANT:     For arduino pin mapped to ENA, and ENB, make sure pins are
